@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Reem+Kufi');
+
+body{
+	margin: 0;
+    font-family: 'Reem Kufi';
+}
+section.navCommon {
+    position: fixed;
+    background: #fff;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: -60%;
+    box-shadow: 2px 4px 3px #ccc;
+}
+.navCommonHeader i {
+    padding: 3px;
+    float: right;
+}
+.headerCommon{
+	color: #fff;
+    padding: 15px;
+	background: #D1913C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.headerCommon i{
+   font-size: 40px;
+}
+.productListCommon_UL {
+    padding: 15px;
+}
+.productListCommon_UL li{
+    padding: 5px;
+    background-color: #eee;
+    min-height: 50px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.productFilter {
+    height: 60px;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+.filterBox {
+    width: 33%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.filterBox:nth-child(2) {
+    width: 34%;
+    position: relative;
+}
+.filterBox:nth-child(2):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background: #ccc;
+    left: 8px;
+    top: 14px;
+}
+.filterBox:nth-child(2):after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background: #ccc;
+    right: 8px;
+    top: 14px;
+}
